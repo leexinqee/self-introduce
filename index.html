@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+    <link rel="stylesheet" type="text/css" href="css/lib/ionic.min.css">
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/lib/ionic.bundle.min.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+</head>
+<body ng-controller="myCtrl">
+<ion-slide-box does-continue="false" show-pager="false"  auto-play="false">
+    <ion-slide>
+        <div class="slide-page page-one">
+            <img src="img/su/su_1.png" alt="" class="pg-title" />
+            <div class="text-self">--李鑫其</div>
+        </div>
+    </ion-slide>
+    <ion-slide>
+        <div class="slide-page page-two">
+            page2
+        </div>
+    </ion-slide>
+    <ion-slide>
+        <div class="slide-page page-three">
+            page3
+        </div>
+    </ion-slide>
+    <ion-slide>
+        <div class="slide-page page-four">
+            page4
+        </div>
+    </ion-slide>
+</ion-slide-box>
+<script>
+
+    $(function(){
+        $(".slide-page").height($(window).height());
+    });
+
+    angular.module("myApp", ['ionic'])
+    .controller("myCtrl", function($scope){
+
+
+    })
+</script>
+</body>
+</html>

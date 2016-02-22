@@ -1,0 +1,43 @@
+$pages: one two three four;
+
+body {
+  font-family: microsoft YaHei;
+}
+
+.porel {
+  position: relative;
+}
+.poabs {
+  position: absolute;
+}
+@mixin po-center($width, $height) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: - ($width / 2);
+  margin-top: - ($height / 2);
+}
+
+.slide-page {
+  @extend .porel;
+  height: 100%;
+  overflow: hidden;
+}
+.page-one {
+  background: url("../img/bg/1.jpg") no-repeat 0 0;
+  background-size: 100% 100%;
+  .pg-title {
+    width: 110px;
+    height: 600px;
+    @include po-center(110px, 600px)
+  }
+  .text-self {
+    font-size: 16px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    color: #fff;
+  }
+}
+
+

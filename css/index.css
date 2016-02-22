@@ -1,0 +1,30 @@
+body {
+  font-family: microsoft YaHei; }
+
+.porel, .slide-page {
+  position: relative; }
+
+.poabs {
+  position: absolute; }
+
+.slide-page {
+  height: 100%;
+  overflow: hidden; }
+
+.page-one {
+  background: url("../img/bg/1.jpg") no-repeat 0 0;
+  background-size: 100% 100%; }
+  .page-one .pg-title {
+    width: 110px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -55px;
+    margin-top: -300px; }
+  .page-one .text-self {
+    font-size: 16px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    color: #fff; }
