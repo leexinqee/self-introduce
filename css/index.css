@@ -28,3 +28,31 @@ body {
     right: 50px;
     bottom: 50px;
     color: #fff; }
+
+.page-two {
+  background: #543137 url("../img/bg/2.png") no-repeat 0 0;
+  background-size: 100% 100%;
+  color: #fff;
+  font-size: 20px; }
+  .page-two .item-row {
+    position: absolute; }
+  .page-two .item-col-1 {
+    padding-right: 30px; }
+  .page-two .item-row-1 {
+    left: 80px;
+    top: 130px; }
+  .page-two .item-row-2 {
+    left: 80px;
+    top: 235px; }
+  .page-two .item-row-3 {
+    left: 80px;
+    top: 340px; }
+  .page-two .item-row-4 {
+    left: 80px;
+    top: 445px; }
+
+.page-three {
+  background: url("../img/bg/3.jpg") no-repeat 0 0;
+  background-size: 100% 100%; }
+  .page-three .title-jiao {
+    position: absolute; }

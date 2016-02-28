@@ -17,12 +17,26 @@
     </ion-slide>
     <ion-slide>
         <div class="slide-page page-two">
-            page2
+            <div class="item-row item-row-1">
+                <span class="item-col-1">姓名</span><span class="item-col-2">李鑫其</span>
+            </div>
+            <div class="item-row item-row-2">
+                <span class="item-col-1">学校</span><span class="item-col-2">重庆邮电大学</span>
+            </div>
+            <div class="item-row item-row-3">
+                <span class="item-col-1">求职</span><span class="item-col-2">前端工程师</span>
+            </div>
+            <div class="item-row item-row-4">
+                <span class="item-col-1">联系</span><span class="item-col-2">18584654947</span>
+            </div>
         </div>
     </ion-slide>
     <ion-slide>
         <div class="slide-page page-three">
-            page3
+            <img src="img/su/jiaoyubeijing.png" class="title-jiao" width="86" height="200" alt=""/>
+            <div class="jiao-row">
+                <p>2</p><p>0</p><p>1</p><p>0</p><p>|</p>
+            </div>
         </div>
     </ion-slide>
     <ion-slide>
@@ -36,7 +50,6 @@
     $(function(){
         $(".slide-page").height($(window).height());
     });
-
     angular.module("myApp", ['ionic'])
     .controller("myCtrl", function($scope){
 

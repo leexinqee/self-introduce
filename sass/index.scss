@@ -23,6 +23,9 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
+// 第一张页面显示内容
+
 .page-one {
   background: url("../img/bg/1.jpg") no-repeat 0 0;
   background-size: 100% 100%;
@@ -39,5 +42,38 @@ body {
     color: #fff;
   }
 }
+
+//  第二张页面显示内容
+
+.page-two {
+  background: #543137 url("../img/bg/2.png") no-repeat 0 0;
+  background-size: 100% 100%;
+  color: #fff;
+  font-size: 20px;
+  .item-row {
+    position: absolute;
+  }
+  .item-col-1 {
+    padding-right: 30px;
+  }
+  @for $i from 0 through 3 {
+    .item-row-#{$i+1} {
+      left: 80px;
+      top: 130px + $i * 105px;
+    }
+  }
+}
+
+//  第三张页面显示内容
+.page-three {
+  background: url("../img/bg/3.jpg") no-repeat 0 0;
+  background-size: 100% 100%;
+  .title-jiao {
+    position: absolute;
+  }
+}
+
+
+
 
 
